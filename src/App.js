@@ -14,7 +14,6 @@ function App() {
     <>
       <div className="container flex justify-center items-center flex-col min-w-full h-screen">
         <h1 className="text-slate-500 text-xl sm:text-4xl md:text-5xl">
-          {" "}
           Increment/Decrement Counter
         </h1>
         <h4 className="text-slate-500 text-lg sm:text-2xl md:text-3xl mt-3">
@@ -23,6 +22,7 @@ function App() {
 
         <div className="counter-container flex justify-center items-center bg-slate-200 mt-10  rounded-lg">
           <a
+            href="#"
             className="decr flex justify-center items-center hover:bg-slate-500 rounded-lg"
             title="Decrement"
             onClick={() => dispatch(decNumber())}
@@ -37,6 +37,7 @@ function App() {
             onChange={inputDataChange}
           />
           <a
+            href="#"
             className="incr flex justify-center items-center hover:bg-slate-500"
             title="Increment"
             onClick={() => dispatch(incNumber())}
